@@ -8,8 +8,6 @@ a2 = 0
 a3 = 0
 a4 = 0
 a5 = 0
-a6 = 0
-a7 = 0
 
 class Bot:
     def __init__(self):
@@ -26,8 +24,6 @@ class Bot:
         global a3
         global a4
         global a5
-        global a6
-        global a7
         for event in self.long_poll.listen(): #слушаем что происходит в сообществе и ждем реакций
             if event.type  == VkEventType.MESSAGE_NEW and event.to_me:
                 print("2")
@@ -1231,516 +1227,26 @@ class Bot:
                     a5_25.add_line()
                     a5_25.add_button("3-e5", color=VkKeyboardColor.PRIMARY)
                     self.send_message(event.user_id, text, a5_25.get_keyboard())
-                #25
-                if '0-e5' in event.message.lower():
-                    a5 = a5+0
-                    text = 'Я хочу работать руками \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_26 = VkKeyboard(one_time=True)
-                    a6_26.add_button("0-f1", color=VkKeyboardColor.PRIMARY)
-                    a6_26.add_line()
-                    a6_26.add_button("1-f1", color=VkKeyboardColor.PRIMARY)
-                    a6_26.add_line()
-                    a6_26.add_button("2-f1", color=VkKeyboardColor.PRIMARY)
-                    a6_26.add_line()
-                    a6_26.add_button("3-f1", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_26.get_keyboard())
-                if '1-e5' in event.message.lower():
-                    a5 = a5+1
-                    text = 'Я хочу работать руками \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_26 = VkKeyboard(one_time=True)
-                    a6_26.add_button("0-f1", color=VkKeyboardColor.PRIMARY)
-                    a6_26.add_line()
-                    a6_26.add_button("1-f1", color=VkKeyboardColor.PRIMARY)
-                    a6_26.add_line()
-                    a6_26.add_button("2-f1", color=VkKeyboardColor.PRIMARY)
-                    a6_26.add_line()
-                    a6_26.add_button("3-f1", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_26.get_keyboard())
-                if '2-e5' in event.message.lower():
-                    a5 = a5+2
-                    text = 'Я хочу работать руками \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_26 = VkKeyboard(one_time=True)
-                    a6_26.add_button("0-f1", color=VkKeyboardColor.PRIMARY)
-                    a6_26.add_line()
-                    a6_26.add_button("1-f1", color=VkKeyboardColor.PRIMARY)
-                    a6_26.add_line()
-                    a6_26.add_button("2-f1", color=VkKeyboardColor.PRIMARY)
-                    a6_26.add_line()
-                    a6_26.add_button("3-f1", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_26.get_keyboard())
-                if '3-e5' in event.message.lower():
-                    a5 = a5+3
-                    text = 'Я хочу работать руками \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_26 = VkKeyboard(one_time=True)
-                    a6_26.add_button("0-f1", color=VkKeyboardColor.PRIMARY)
-                    a6_26.add_line()
-                    a6_26.add_button("1-f1", color=VkKeyboardColor.PRIMARY)
-                    a6_26.add_line()
-                    a6_26.add_button("2-f1", color=VkKeyboardColor.PRIMARY)
-                    a6_26.add_line()
-                    a6_26.add_button("3-f1", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_26.get_keyboard())
-                #26
-                if '0-f1' in event.message.lower():
-                    a6 = a6+0
-                    text = 'Я хочу выполнять решения \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_27 = VkKeyboard(one_time=True)
-                    a6_27.add_button("0-f2", color=VkKeyboardColor.PRIMARY)
-                    a6_27.add_line()
-                    a6_27.add_button("1-f2", color=VkKeyboardColor.PRIMARY)
-                    a6_27.add_line()
-                    a6_27.add_button("2-f2", color=VkKeyboardColor.PRIMARY)
-                    a6_27.add_line()
-                    a6_27.add_button("3-f2", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_27.get_keyboard())
-                if '1-f1' in event.message.lower():
-                    a6 = a6+1
-                    text = 'Я хочу выполнять решения \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_27 = VkKeyboard(one_time=True)
-                    a6_27.add_button("0-f2", color=VkKeyboardColor.PRIMARY)
-                    a6_27.add_line()
-                    a6_27.add_button("1-f2", color=VkKeyboardColor.PRIMARY)
-                    a6_27.add_line()
-                    a6_27.add_button("2-f2", color=VkKeyboardColor.PRIMARY)
-                    a6_27.add_line()
-                    a6_27.add_button("3-f2", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_27.get_keyboard())
-                if '2-f1' in event.message.lower():
-                    a6 = a6+2
-                    text = 'Я хочу выполнять решения \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_27 = VkKeyboard(one_time=True)
-                    a6_27.add_button("0-f2", color=VkKeyboardColor.PRIMARY)
-                    a6_27.add_line()
-                    a6_27.add_button("1-f2", color=VkKeyboardColor.PRIMARY)
-                    a6_27.add_line()
-                    a6_27.add_button("2-f2", color=VkKeyboardColor.PRIMARY)
-                    a6_27.add_line()
-                    a6_27.add_button("3-f2", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_27.get_keyboard())
-                if '3-f1' in event.message.lower():
-                    a6 = a6+3
-                    text = 'Я хочу выполнять решения \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_27 = VkKeyboard(one_time=True)
-                    a6_27.add_button("0-f2", color=VkKeyboardColor.PRIMARY)
-                    a6_27.add_line()
-                    a6_27.add_button("1-f2", color=VkKeyboardColor.PRIMARY)
-                    a6_27.add_line()
-                    a6_27.add_button("2-f2", color=VkKeyboardColor.PRIMARY)
-                    a6_27.add_line()
-                    a6_27.add_button("3-f2", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_27.get_keyboard())
-                #27
-                if '0-f2' in event.message.lower():
-                    a6 = a6+0
-                    text = 'Я хочу воспроизводить имеющиеся образцы, размножать, копировать \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_28 = VkKeyboard(one_time=True)
-                    a6_28.add_button("0-f3", color=VkKeyboardColor.PRIMARY)
-                    a6_28.add_line()
-                    a6_28.add_button("1-f3", color=VkKeyboardColor.PRIMARY)
-                    a6_28.add_line()
-                    a6_28.add_button("2-f3", color=VkKeyboardColor.PRIMARY)
-                    a6_28.add_line()
-                    a6_28.add_button("3-f3", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_28.get_keyboard())
-                if '1-f2' in event.message.lower():
-                    a6 = a6+1
-                    text = 'Я хочу воспроизводить имеющиеся образцы, размножать, копировать \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_28 = VkKeyboard(one_time=True)
-                    a6_28.add_button("0-f3", color=VkKeyboardColor.PRIMARY)
-                    a6_28.add_line()
-                    a6_28.add_button("1-f3", color=VkKeyboardColor.PRIMARY)
-                    a6_28.add_line()
-                    a6_28.add_button("2-f3", color=VkKeyboardColor.PRIMARY)
-                    a6_28.add_line()
-                    a6_28.add_button("3-f3", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_28.get_keyboard())
-                if '2-f2' in event.message.lower():
-                    a6 = a6+2
-                    text = 'Я хочу воспроизводить имеющиеся образцы, размножать, копировать \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_28 = VkKeyboard(one_time=True)
-                    a6_28.add_button("0-f3", color=VkKeyboardColor.PRIMARY)
-                    a6_28.add_line()
-                    a6_28.add_button("1-f3", color=VkKeyboardColor.PRIMARY)
-                    a6_28.add_line()
-                    a6_28.add_button("2-f3", color=VkKeyboardColor.PRIMARY)
-                    a6_28.add_line()
-                    a6_28.add_button("3-f3", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_28.get_keyboard())
-                if '3-f2' in event.message.lower():
-                    a6 = a6+3
-                    text = 'Я хочу воспроизводить имеющиеся образцы, размножать, копировать \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_28 = VkKeyboard(one_time=True)
-                    a6_28.add_button("0-f3", color=VkKeyboardColor.PRIMARY)
-                    a6_28.add_line()
-                    a6_28.add_button("1-f3", color=VkKeyboardColor.PRIMARY)
-                    a6_28.add_line()
-                    a6_28.add_button("2-f3", color=VkKeyboardColor.PRIMARY)
-                    a6_28.add_line()
-                    a6_28.add_button("3-f3", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_28.get_keyboard())
-                #28
-                if '0-f3' in event.message.lower():
-                    a6 = a6+0
-                    text = 'Я хочу получать конкретный практический результат \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_29 = VkKeyboard(one_time=True)
-                    a6_29.add_button("0-f4", color=VkKeyboardColor.PRIMARY)
-                    a6_29.add_line()
-                    a6_29.add_button("1-f4", color=VkKeyboardColor.PRIMARY)
-                    a6_29.add_line()
-                    a6_29.add_button("2-f4", color=VkKeyboardColor.PRIMARY)
-                    a6_29.add_line()
-                    a6_29.add_button("3-f4", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_29.get_keyboard())
-                if '1-f3' in event.message.lower():
-                    a6 = a6+1
-                    text = 'Я хочу получать конкретный практический результат \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_29 = VkKeyboard(one_time=True)
-                    a6_29.add_button("0-f4", color=VkKeyboardColor.PRIMARY)
-                    a6_29.add_line()
-                    a6_29.add_button("1-f4", color=VkKeyboardColor.PRIMARY)
-                    a6_29.add_line()
-                    a6_29.add_button("2-f4", color=VkKeyboardColor.PRIMARY)
-                    a6_29.add_line()
-                    a6_29.add_button("3-f4", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_29.get_keyboard())
-                if '2-f3' in event.message.lower():
-                    a6 = a6+2
-                    text = 'Я хочу получать конкретный практический результат \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_29 = VkKeyboard(one_time=True)
-                    a6_29.add_button("0-f4", color=VkKeyboardColor.PRIMARY)
-                    a6_29.add_line()
-                    a6_29.add_button("1-f4", color=VkKeyboardColor.PRIMARY)
-                    a6_29.add_line()
-                    a6_29.add_button("2-f4", color=VkKeyboardColor.PRIMARY)
-                    a6_29.add_line()
-                    a6_29.add_button("3-f4", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_29.get_keyboard())
-                if '3-f3' in event.message.lower():
-                    a6 = a6+3
-                    text = 'Я хочу получать конкретный практический результат \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_29 = VkKeyboard(one_time=True)
-                    a6_29.add_button("0-f4", color=VkKeyboardColor.PRIMARY)
-                    a6_29.add_line()
-                    a6_29.add_button("1-f4", color=VkKeyboardColor.PRIMARY)
-                    a6_29.add_line()
-                    a6_29.add_button("2-f4", color=VkKeyboardColor.PRIMARY)
-                    a6_29.add_line()
-                    a6_29.add_button("3-f4", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_29.get_keyboard())
-                #29
-                if '0-f4' in event.message.lower():
-                    a6 = a6+0
-                    text = 'Я хочу воплощать идеи в жизнь \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_30 = VkKeyboard(one_time=True)
-                    a6_30.add_button("0-f5", color=VkKeyboardColor.PRIMARY)
-                    a6_30.add_line()
-                    a6_30.add_button("1-f5", color=VkKeyboardColor.PRIMARY)
-                    a6_30.add_line()
-                    a6_30.add_button("2-f5", color=VkKeyboardColor.PRIMARY)
-                    a6_30.add_line()
-                    a6_30.add_button("3-f5", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_30.get_keyboard())
-                if '1-f4' in event.message.lower():
-                    a6 = a6+1
-                    text = 'Я хочу воплощать идеи в жизнь \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_30 = VkKeyboard(one_time=True)
-                    a6_30.add_button("0-f5", color=VkKeyboardColor.PRIMARY)
-                    a6_30.add_line()
-                    a6_30.add_button("1-f5", color=VkKeyboardColor.PRIMARY)
-                    a6_30.add_line()
-                    a6_30.add_button("2-f5", color=VkKeyboardColor.PRIMARY)
-                    a6_30.add_line()
-                    a6_30.add_button("3-f5", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_30.get_keyboard())
-                if '2-f4' in event.message.lower():
-                    a6 = a6+2
-                    text = 'Я хочу воплощать идеи в жизнь \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_30 = VkKeyboard(one_time=True)
-                    a6_30.add_button("0-f5", color=VkKeyboardColor.PRIMARY)
-                    a6_30.add_line()
-                    a6_30.add_button("1-f5", color=VkKeyboardColor.PRIMARY)
-                    a6_30.add_line()
-                    a6_30.add_button("2-f5", color=VkKeyboardColor.PRIMARY)
-                    a6_30.add_line()
-                    a6_30.add_button("3-f5", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_30.get_keyboard())
-                if '3-f4' in event.message.lower():
-                    a6 = a6+3
-                    text = 'Я хочу воплощать идеи в жизнь \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_30 = VkKeyboard(one_time=True)
-                    a6_30.add_button("0-f5", color=VkKeyboardColor.PRIMARY)
-                    a6_30.add_line()
-                    a6_30.add_button("1-f5", color=VkKeyboardColor.PRIMARY)
-                    a6_30.add_line()
-                    a6_30.add_button("2-f5", color=VkKeyboardColor.PRIMARY)
-                    a6_30.add_line()
-                    a6_30.add_button("3-f5", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_30.get_keyboard())
-                #30
-                if '0-f5' in event.message.lower():
-                    a6 = a6+0
-                    text = 'Я хочу работать головой \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_31 = VkKeyboard(one_time=True)
-                    a6_31.add_button("0-g1", color=VkKeyboardColor.PRIMARY)
-                    a6_31.add_line()
-                    a6_31.add_button("1-g1", color=VkKeyboardColor.PRIMARY)
-                    a6_31.add_line()
-                    a6_31.add_button("2-g1", color=VkKeyboardColor.PRIMARY)
-                    a6_31.add_line()
-                    a6_31.add_button("3-g1", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_31.get_keyboard())
-                if '1-f5' in event.message.lower():
-                    a6 = a6+1
-                    text = 'Я хочу работать головой \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_31 = VkKeyboard(one_time=True)
-                    a6_31.add_button("0-g1", color=VkKeyboardColor.PRIMARY)
-                    a6_31.add_line()
-                    a6_31.add_button("1-g1", color=VkKeyboardColor.PRIMARY)
-                    a6_31.add_line()
-                    a6_31.add_button("2-g1", color=VkKeyboardColor.PRIMARY)
-                    a6_31.add_line()
-                    a6_31.add_button("3-g1", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_31.get_keyboard())
-                if '2-f5' in event.message.lower():
-                    a6 = a6+2
-                    text = 'Я хочу работать головой \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_31 = VkKeyboard(one_time=True)
-                    a6_31.add_button("0-g1", color=VkKeyboardColor.PRIMARY)
-                    a6_31.add_line()
-                    a6_31.add_button("1-g1", color=VkKeyboardColor.PRIMARY)
-                    a6_31.add_line()
-                    a6_31.add_button("2-g1", color=VkKeyboardColor.PRIMARY)
-                    a6_31.add_line()
-                    a6_31.add_button("3-g1", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_31.get_keyboard())
-                if '3-f5' in event.message.lower():
-                    a6 = a6+3
-                    text = 'Я хочу работать головой \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a6_31 = VkKeyboard(one_time=True)
-                    a6_31.add_button("0-g1", color=VkKeyboardColor.PRIMARY)
-                    a6_31.add_line()
-                    a6_31.add_button("1-g1", color=VkKeyboardColor.PRIMARY)
-                    a6_31.add_line()
-                    a6_31.add_button("2-g1", color=VkKeyboardColor.PRIMARY)
-                    a6_31.add_line()
-                    a6_31.add_button("3-g1", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a6_31.get_keyboard())
-                #31
-                if '0-g1' in event.message.lower():
-                    a7 = a7+0
-                    text = 'Я хочу принимать решения \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a7_32 = VkKeyboard(one_time=True)
-                    a7_32.add_button("0-g2", color=VkKeyboardColor.PRIMARY)
-                    a7_32.add_line()
-                    a7_32.add_button("1-g2", color=VkKeyboardColor.PRIMARY)
-                    a7_32.add_line()
-                    a7_32.add_button("2-g2", color=VkKeyboardColor.PRIMARY)
-                    a7_32.add_line()
-                    a7_32.add_button("3-g2", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a7_32.get_keyboard())
-                if '1-g1' in event.message.lower():
-                    a7 = a7+1
-                    text = 'Я хочу принимать решения \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a7_32 = VkKeyboard(one_time=True)
-                    a7_32.add_button("0-g2", color=VkKeyboardColor.PRIMARY)
-                    a7_32.add_line()
-                    a7_32.add_button("1-g2", color=VkKeyboardColor.PRIMARY)
-                    a7_32.add_line()
-                    a7_32.add_button("2-g2", color=VkKeyboardColor.PRIMARY)
-                    a7_32.add_line()
-                    a7_32.add_button("3-g2", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a7_32.get_keyboard())
-                if '2-g1' in event.message.lower():
-                    a7 = a7+2
-                    text = 'Я хочу принимать решения \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a7_32 = VkKeyboard(one_time=True)
-                    a7_32.add_button("0-g2", color=VkKeyboardColor.PRIMARY)
-                    a7_32.add_line()
-                    a7_32.add_button("1-g2", color=VkKeyboardColor.PRIMARY)
-                    a7_32.add_line()
-                    a7_32.add_button("2-g2", color=VkKeyboardColor.PRIMARY)
-                    a7_32.add_line()
-                    a7_32.add_button("3-g2", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a7_32.get_keyboard())
-                if '3-g1' in event.message.lower():
-                    a7 = a7+3
-                    text = 'Я хочу принимать решения \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a7_32 = VkKeyboard(one_time=True)
-                    a7_32.add_button("0-g2", color=VkKeyboardColor.PRIMARY)
-                    a7_32.add_line()
-                    a7_32.add_button("1-g2", color=VkKeyboardColor.PRIMARY)
-                    a7_32.add_line()
-                    a7_32.add_button("2-g2", color=VkKeyboardColor.PRIMARY)
-                    a7_32.add_line()
-                    a7_32.add_button("3-g2", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a7_32.get_keyboard())
-                #32
-                if '0-g2' in event.message.lower():
-                    a7 = a7+0
-                    text = 'Я хочу создавать новые образцы \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a7_33 = VkKeyboard(one_time=True)
-                    a7_33.add_button("0-g3", color=VkKeyboardColor.PRIMARY)
-                    a7_33.add_line()
-                    a7_33.add_button("1-g3", color=VkKeyboardColor.PRIMARY)
-                    a7_33.add_line()
-                    a7_33.add_button("2-g3", color=VkKeyboardColor.PRIMARY)
-                    a7_33.add_line()
-                    a7_33.add_button("3-g3", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a7_33.get_keyboard())
-                if '1-g2' in event.message.lower():
-                    a7 = a7+1
-                    text = 'Я хочу создавать новые образцы \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a7_33 = VkKeyboard(one_time=True)
-                    a7_33.add_button("0-g3", color=VkKeyboardColor.PRIMARY)
-                    a7_33.add_line()
-                    a7_33.add_button("1-g3", color=VkKeyboardColor.PRIMARY)
-                    a7_33.add_line()
-                    a7_33.add_button("2-g3", color=VkKeyboardColor.PRIMARY)
-                    a7_33.add_line()
-                    a7_33.add_button("3-g3", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a7_33.get_keyboard())
-                if '2-g2' in event.message.lower():
-                    a7 = a7+2
-                    text = 'Я хочу создавать новые образцы \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a7_33 = VkKeyboard(one_time=True)
-                    a7_33.add_button("0-g3", color=VkKeyboardColor.PRIMARY)
-                    a7_33.add_line()
-                    a7_33.add_button("1-g3", color=VkKeyboardColor.PRIMARY)
-                    a7_33.add_line()
-                    a7_33.add_button("2-g3", color=VkKeyboardColor.PRIMARY)
-                    a7_33.add_line()
-                    a7_33.add_button("3-g3", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a7_33.get_keyboard())
-                if '3-g2' in event.message.lower():
-                    a7 = a7+3
-                    text = 'Я хочу создавать новые образцы \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a7_33 = VkKeyboard(one_time=True)
-                    a7_33.add_button("0-g3", color=VkKeyboardColor.PRIMARY)
-                    a7_33.add_line()
-                    a7_33.add_button("1-g3", color=VkKeyboardColor.PRIMARY)
-                    a7_33.add_line()
-                    a7_33.add_button("2-g3", color=VkKeyboardColor.PRIMARY)
-                    a7_33.add_line()
-                    a7_33.add_button("3-g3", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a7_33.get_keyboard())
-                #33
-                if '0-g3' in event.message.lower():
-                    a7 = a7+0
-                    text = 'Я хочу анализировать, изучать, наблюдать, измерять, контролировать \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a7_34 = VkKeyboard(one_time=True)
-                    a7_34.add_button("0-g4", color=VkKeyboardColor.PRIMARY)
-                    a7_34.add_line()
-                    a7_34.add_button("1-g4", color=VkKeyboardColor.PRIMARY)
-                    a7_34.add_line()
-                    a7_34.add_button("2-g4", color=VkKeyboardColor.PRIMARY)
-                    a7_34.add_line()
-                    a7_34.add_button("3-g4", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a7_34.get_keyboard())
-                if '1-g3' in event.message.lower():
-                    a7 = a7+1
-                    text = 'Я хочу анализировать, изучать, наблюдать, измерять, контролировать \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a7_34 = VkKeyboard(one_time=True)
-                    a7_34.add_button("0-g4", color=VkKeyboardColor.PRIMARY)
-                    a7_34.add_line()
-                    a7_34.add_button("1-g4", color=VkKeyboardColor.PRIMARY)
-                    a7_34.add_line()
-                    a7_34.add_button("2-g4", color=VkKeyboardColor.PRIMARY)
-                    a7_34.add_line()
-                    a7_34.add_button("3-g4", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a7_34.get_keyboard())
-                if '2-g3' in event.message.lower():
-                    a7 = a7+2
-                    text = 'Я хочу анализировать, изучать, наблюдать, измерять, контролировать \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a7_34 = VkKeyboard(one_time=True)
-                    a7_34.add_button("0-g4", color=VkKeyboardColor.PRIMARY)
-                    a7_34.add_line()
-                    a7_34.add_button("1-g4", color=VkKeyboardColor.PRIMARY)
-                    a7_34.add_line()
-                    a7_34.add_button("2-g4", color=VkKeyboardColor.PRIMARY)
-                    a7_34.add_line()
-                    a7_34.add_button("3-g4", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a7_34.get_keyboard())
-                if '3-g3' in event.message.lower():
-                    a7 = a7+3
-                    text = 'Я хочу анализировать, изучать, наблюдать, измерять, контролировать \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a7_34 = VkKeyboard(one_time=True)
-                    a7_34.add_button("0-g4", color=VkKeyboardColor.PRIMARY)
-                    a7_34.add_line()
-                    a7_34.add_button("1-g4", color=VkKeyboardColor.PRIMARY)
-                    a7_34.add_line()
-                    a7_34.add_button("2-g4", color=VkKeyboardColor.PRIMARY)
-                    a7_34.add_line()
-                    a7_34.add_button("3-g4", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a7_34.get_keyboard())
-                #34
-                if '0-g4' in event.message.lower():
-                    a7 = a7+0
-                    text = 'Я хочу планировать, конструировать, разрабатывать, моделировать \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a7_35 = VkKeyboard(one_time=True)
-                    a7_35.add_button("0-g5", color=VkKeyboardColor.PRIMARY)
-                    a7_35.add_line()
-                    a7_35.add_button("1-g5", color=VkKeyboardColor.PRIMARY)
-                    a7_35.add_line()
-                    a7_35.add_button("2-g5", color=VkKeyboardColor.PRIMARY)
-                    a7_35.add_line()
-                    a7_35.add_button("3-g5", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a7_35.get_keyboard())
-                if '1-g4' in event.message.lower():
-                    a7 = a7+1
-                    text = 'Я хочу планировать, конструировать, разрабатывать, моделировать \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a7_35 = VkKeyboard(one_time=True)
-                    a7_35.add_button("0-g5", color=VkKeyboardColor.PRIMARY)
-                    a7_35.add_line()
-                    a7_35.add_button("1-g5", color=VkKeyboardColor.PRIMARY)
-                    a7_35.add_line()
-                    a7_35.add_button("2-g5", color=VkKeyboardColor.PRIMARY)
-                    a7_35.add_line()
-                    a7_35.add_button("3-g5", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a7_35.get_keyboard())
-                if '2-g4' in event.message.lower():
-                    a7 = a7+2
-                    text = 'Я хочу планировать, конструировать, разрабатывать, моделировать \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a7_35 = VkKeyboard(one_time=True)
-                    a7_35.add_button("0-g5", color=VkKeyboardColor.PRIMARY)
-                    a7_35.add_line()
-                    a7_35.add_button("1-g5", color=VkKeyboardColor.PRIMARY)
-                    a7_35.add_line()
-                    a7_35.add_button("2-g5", color=VkKeyboardColor.PRIMARY)
-                    a7_35.add_line()
-                    a7_35.add_button("3-g5", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a7_35.get_keyboard())
-                if '3-g4' in event.message.lower():
-                    a7 = a7+3
-                    text = 'Я хочу планировать, конструировать, разрабатывать, моделировать \n 0 – вовсе нет, 1 – пожалуй, так, 2 – верно, 3 – совершенно верно'
-                    a7_35 = VkKeyboard(one_time=True)
-                    a7_35.add_button("0-g5", color=VkKeyboardColor.PRIMARY)
-                    a7_35.add_line()
-                    a7_35.add_button("1-g5", color=VkKeyboardColor.PRIMARY)
-                    a7_35.add_line()
-                    a7_35.add_button("2-g5", color=VkKeyboardColor.PRIMARY)
-                    a7_35.add_line()
-                    a7_35.add_button("3-g5", color=VkKeyboardColor.PRIMARY)
-                    self.send_message(event.user_id, text, a7_35.get_keyboard())
                 #the and
-                if '0-g5' in event.message.lower():
+                if '0-e5' in event.message.lower():
                     a7 = a7+0
                     text = 'вы прошли тест!!! \n чтобы завершить тест и просматреть результаты нажмите на кнопку <<завершить тест>>'
                     a7_100 = VkKeyboard(one_time=True)
                     a7_100.add_button("завершить тест", color=VkKeyboardColor.PRIMARY)
                     self.send_message(event.user_id, text, a7_100.get_keyboard())
-                if '1-g5' in event.message.lower():
+                if '1-e5' in event.message.lower():
                     a7 = a7+1
                     text = 'вы прошли тест!!! \n чтобы завершить тест и просматреть результаты нажмите на кнопку <<завершить тест>>'
                     a7_100 = VkKeyboard(one_time=True)
                     a7_100.add_button("завершить тест", color=VkKeyboardColor.PRIMARY)
                     self.send_message(event.user_id, text, a7_100.get_keyboard())
-                if '2-g5' in event.message.lower():
+                if '2-e5' in event.message.lower():
                     a7 = a7+2
                     text = 'вы прошли тест!!! \n чтобы завершить тест и просматреть результаты нажмите на кнопку <<завершить тест>>'
                     a7_100 = VkKeyboard(one_time=True)
                     a7_100.add_button("завершить тест", color=VkKeyboardColor.PRIMARY)
                     self.send_message(event.user_id, text, a7_100.get_keyboard())
-                if '3-g5' in event.message.lower():
+                if '3-e5' in event.message.lower():
                     a7 = a7+3
                     text = 'вы прошли тест!!! \n чтобы завершить тест и просмотреть результаты нажмите на кнопку <<завершить тест>>'
                     a7_100 = VkKeyboard(one_time=True)
@@ -1754,28 +1260,20 @@ class Bot:
                     print(a3)
                     print(a4)
                     print(a5)
-                    print(a6)
-                    print(a7)
                     if a1 > a2 and a1 > a3 and a1 > a4 and a1 > a5 and a1 > a6 and a1 > a7:
-                        text = "a1"
+                        text = "Вам больше подходит направление: Человек – человек. Эти профессии направлены на работу с людьми. К ним относятся: учителя, врачи, журналисты, парикмахеры и др."
                         self.send_message(event.user_id, text)
                     elif a2 > a1 and a2 > a3 and a2 > a4 and a2 > a5 and a2 > a6 and a2 > a7:
-                        text = "a2"
+                        text = "Вам больше пожходит направление: Человек – техника. Представители данного типа профессий имеют непосредственное отношение к технике. Например, механики, технологи, инженеры, сантехники, мастера по ремонту стиральных машин и др."
                         self.send_message(event.user_id, text)
                     elif a3 > a1 and a3 > a2 and a3 > a4 and a3 > a5 and a3 > a6 and a3 > a7:
-                        text = "a3"
+                        text = "Вам больше пожходит направление: Человек – информация. Речь идёт о людях, работающих со знаковыми системами (цифрами, кодами, буквами и прочими символами). В данную категорию входят программисты, бухгалтеры, финансисты, аналитики и др."
                         self.send_message(event.user_id, text)
                     elif a4 > a1 and a4 > a2 and a4 > a3 and a4 > a5 and a4 > a6 and a4 > a7:
-                        text = "a4"
+                        text = "Вам больше пожходит направление: Человек – художественный образ. В эту группу входят различные творческие профессии, такие как художник, актёр, певец, композитор, режиссер и др."
                         self.send_message(event.user_id, text)
                     elif a5 > a1 and a5 > a2 and a5 > a3 and a5 > a4 and a5 > a6 and a5 > a7:
-                        text = "a5"
-                        self.send_message(event.user_id, text)
-                    elif a6 > a1 and a6 > a2 and a6 > a3 and a6 > a4 and a6 > a5 and a6 > a7:
-                        text = "a6"
-                        self.send_message(event.user_id, text)
-                    elif a7 > a1 and a7 > a2 and a7 > a3 and a7 > a4 and a7 > a5 and a4 > a6:
-                        text = "a7"
+                        text = "Вам больше пожходит направление: Человек – природа. Здесь речь идёт о тех профессиях, представители которых связаны с природой. Это могут быть егеря, садовники, агрономы, экологи и др."
                         self.send_message(event.user_id, text)
                     
     def send_message(self,user_id, message, keyboard=None):
